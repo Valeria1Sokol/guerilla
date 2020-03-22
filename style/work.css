@@ -177,17 +177,15 @@ body {
 
     .flavor-lightbox__close {
         top: 3%;
+        font-size: 5.5vw;
     }
 }
-/*
+
 @media (max-width: 375px) {
-
-
-    .flavor-lightbox__close {
-        top: 0%;
+    .work .workBox .workText {
+        font-size: 1.3vw;
     }
 }
-*/
 
 @media all and (max-width:320px) {
 
@@ -199,5 +197,5 @@ body {
     .work .textBox {
         padding: 0.7vw 1vw 0;
     }
-    
+
 }
