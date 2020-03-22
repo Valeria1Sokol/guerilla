@@ -1,0 +1,162 @@
+.containerBox {
+    background-image: url(../img/about_bg.png);
+}
+
+.mainText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4.4vw 0 0 12.6vw;
+}
+
+.mainText .aboutText {
+    width: 31%;
+}
+
+.owl-carousel {
+    margin: 3.1vw 0 0;
+    background-color: black;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 18% 0 10%;
+}
+
+.slider .sliderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 42.4%;
+}
+
+.sliderImg {
+    width: 31%;
+}
+
+.sliderH1 {
+    font-family: 'MuseoL', serif;
+    font-size: 2vw;
+    color: #fae74c;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    margin: 0 0 2.9vw;
+}
+
+.sliderInfo {
+
+    color: #808080;
+    font-size: 0.8vw;
+    line-height: 1.6;
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    width: 6vw;
+    height: 6.4vw;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: center;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus {
+    border: none;
+    outline: none;
+}
+
+.owl-carousel .owl-nav button span {
+
+    color: transparent;
+}
+
+.counter-out {
+    width: 98%;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+@media all and (max-width:768px) {
+    .mainText {
+        padding: 10vw 18vw;
+        align-items: center;
+    }
+
+    .mainText .aboutText {
+        width: 70%;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        transform: rotate(-90deg);
+    }
+
+    .sliderImg {
+        width: 41%;
+    }
+
+    .slider .sliderText {
+        align-items: center;
+        width: 75%;
+        margin: 8vw 0;
+    }
+
+    .sliderH1 {
+        font-size: 3.5vw;
+        margin: 0vw 0 4vw;
+    }
+
+    .sliderInfo {
+        font-size: 1.4vw;
+    }
+
+    .owl-carousel {
+        margin: 10vw 0 0;
+        background-color: transparent;
+    }
+
+    .counter-out {
+        display: none;
+    }
+
+    .owl-stage-outer {
+        width: 100%;
+    }
+
+    .owl-carousel.owl-loaded {
+        transform: rotate(90deg);
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        width: 12vw;
+    }
+
+    .owl-nav {
+        margin: 3vw -12vw 0 0;
+    }
+    .overlay
+    {
+        z-index: 2;
+    }
+}

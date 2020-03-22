@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/case_style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+         <a href="" class="navSpan"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span></a>
+        </div>
+        <div class="containerBox">
+            <header>
+                <a href=""><img class='logo' src='img/logo.png'></a>
+                <ul class="menu">
+                    <li> <a href="index.html">
+                            <p class="menuText">Home</p>
+                            <p class="menuNum">01.</p>
+                        </a>
+                    </li>
+                    <li> <a href="aboutUs.html">
+                            <p class="menuText">Telling stories that are remembered</p>
+                            <p class="menuNum">02.</p>
+                        </a>
+                    </li>
+                    <li> <a href="weDo.html">
+                            <p class="menuText">What we do</p>
+                            <p class="menuNum">03.</p>
+                        </a>
+                    </li>
+                    <li> <a href="work.html">
+                            <p class="menuText">Work</p>
+                            <p class="menuNum">04.</p>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="burgerMenu">
+                    <a id="hamburger-icon" href="#" class="open-close-btn"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span></a>
+                </div>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <a href="index.html">
+                            <p class="menuText"><span class="menuNum">01. </span>Home</p>
+                        </a>
+                        <a href="aboutUs.html">
+                            <p class="menuText"><span class="menuNum">02. </span>Telling stories that are remembered</p>
+                        </a>
+                        <a href="weDo.html">
+                            <p class="menuText"><span class="menuNum">03. </span>What we do</p>
+                        </a>
+                        <a href="work.html">
+                            <p class="menuText"><span class="menuNum">04. </span>Work</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="mainText">
+                <div class="clm3Box">
+                    <div class="caseBox">
+                        <p class="caseP">Suppose you’re a <span>5-star restaurant</span></p>
+                    </div>
+                    <div class="caseBox">
+                        <p class="caseP">Needing to <span>shake things up</span> for your customers</p>
+                    </div>
+                    <div class="caseBox">
+                        <p class="caseP">Who should <span>you call?</span></p>
+                    </div>
+                </div>
+                <div class="caseBox">
+                    <p class="caseP">Use AI/AR/API development/App development/social experiences/web experiences with <br><span>Guerilla Beta to evolve your business</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(".open-close-btn").on('click touchstart', function(e) {
+            // prevent default anchor click 
+            e.preventDefault();
+            $(".overlay").toggleClass("overlay-open");
+            $("#hamburger-icon").toggleClass("hamburger-open");
+        });
+    </script>
+</body></html>

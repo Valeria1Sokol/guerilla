@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mobile {
+    display: none;
+}
+
+.destop {
+    display: block;
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+}
+
+.moveinfo {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7vw;
+    letter-spacing: 0.2vw;
+    animation: fade ease-in-out 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+    top: -100%;
+
+}
+
+.moveinfo .resp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.moveinfo .move {
+    width: 3.7vw;
+    margin: 0 0 2vw;
+}
+
+.mainText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.imgText {
+    position: absolute;
+    z-index: 2;
+    width: 45%;
+    margin-top: 9vw;
+}
+
+.hoverBox {
+    height: 100%;
+}
+
+.stateBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.stateMobile {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.david {
+    background-image: url(../img/David.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
+.davidAnim {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/08.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: none;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.david:hover .davidAnim {
+    display: block;
+    animation: stateAnim ease-in-out 2s;
+
+}
+
+.cleo {
+    background-image: url(../img/Cleopatra.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 41% 45%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cleoAnim {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/06.gif);
+    background-size: 110%;
+    background-position: 41% 45%;
+    background-repeat: no-repeat;
+    display: none;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.cleo:hover .cleoAnim {
+    display: block;
+    animation: stateAnim ease-in-out 2s;
+}
+
+.state {
+    width: 66%;
+    background-image: url(../img/state.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.state:hover {
+    transition: all 1s;
+    cursor: pointer;
+    background-image: url(../img/state_hover.png);
+}
+
+@media all and (max-width:768px) {
+    .moveinfo {
+        display: none;
+    animation: none;
+
+}
+    .mobile {
+        display: block;
+    }
+
+    .destop {
+        display: none;
+    }
+
+    .container {
+        height: fit-content !important;
+    }
+
+    .mainText {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 18vw 11vw 0 9vw;
+    }
+
+    .imgText {
+        position: relative;
+        width: 75%;
+        margin: 0 0 10vw;
+        z-index: 0;
+    }
+
+    .stateBox {
+        height: fit-content;
+    }
+
+    .david {
+        width: 57%;
+        height: 74vw;
+        animation: david ease-in-out 2.2s;
+        animation-fill-mode: forwards;
+        background-position: 72%;
+        background-size: 156%;
+    }
+
+    .cleo {
+        width: 100%;
+        position: relative;
+        left: 5vw;
+        animation: cleo ease-in-out 2.2s;
+        animation-fill-mode: forwards;
+    }
+
+    .state {
+        width: 100%;
+        background-image: url(../img/state_mobile.png);
+    }
+
+    .state:hover {
+        background-image: none;
+    }
+
+    .stateMobile {
+        width: 48%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .davidAnim,
+    .cleoAnim {
+        display: none;
+    }
+
+
+
+}

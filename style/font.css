@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gravitas One';
+    src: url("../font/GravitasOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'MuseoT';
+    src: url("../font/MuseoSansCyrl-100.ttf");
+}
+@font-face {
+    font-family: 'MuseoL';
+    src: url("../font/MuseoSansCyrl-300.ttf");
+}

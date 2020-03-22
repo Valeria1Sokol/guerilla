@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/aboutUs.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/animation.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <!-- javascript -->
+    <script src="script/jquery.min.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+         <a href="" class="navSpan"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span></a>
+        </div>
+        <div class="containerBox">
+            <header>
+                <a href=""><img class='logo' src='img/logo.png'></a>
+                <ul class="menu">
+                    <li> <a href="index.html">
+                            <p class="menuText">Home</p>
+                            <p class="menuNum">01.</p>
+                        </a>
+                    </li>
+                    <li> <a href="aboutUs.html">
+                            <p class="menuText">Telling stories that are remembered</p>
+                            <p class="menuNum">02.</p>
+                        </a>
+                    </li>
+                    <li> <a href="weDo.html">
+                            <p class="menuText">What we do</p>
+                            <p class="menuNum">03.</p>
+                        </a>
+                    </li>
+                    <li> <a href="work.html">
+                            <p class="menuText">Work</p>
+                            <p class="menuNum">04.</p>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="burgerMenu">
+                    <a id="hamburger-icon" href="#" class="open-close-btn"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span></a>
+                </div>
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <a href="index.html">
+                            <p class="menuText"><span class="menuNum">01. </span>Home</p>
+                        </a>
+                        <a href="aboutUs.html">
+                            <p class="menuText"><span class="menuNum">02. </span>Telling stories that are remembered</p>
+                        </a>
+                        <a href="weDo.html">
+                            <p class="menuText"><span class="menuNum">03. </span>What we do</p>
+                        </a>
+                        <a href="work.html">
+                            <p class="menuText"><span class="menuNum">04. </span>Work</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="mainText">
+                <img src="./img/about_text.png" alt="" class="aboutText">
+
+                <!-- body -->
+                <div class="owl-carousel">
+                    <div class="slider">
+                        <img src="./img/hand-grenade1_2-min.gif" class="sliderImg" alt="">
+                        <div class="sliderText">
+                            <h1 class="sliderH1">About us</h1>
+                            <p class="sliderInfo">We are a creative tech lead agency that specialises in organically created CX focused appeal for clients that breaks down barriers in challenging traditional creative experiences that you can cultivate with tech today.</p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <img src="./img/kitty-paw.gif" class="sliderImg" alt="">
+                        <div class="sliderText">
+                            <h1 class="sliderH1">LOREM IPSUM</h1>
+                            <p class="sliderInfo">Our creativity coupled with problem solving skills and using technology has put us as the lead agency for many brands. We leave innovation first for their customers whilst still paying homage to traditional brand communication.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="counter-out"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".open-close-btn").on('click touchstart', function(e) {
+            // prevent default anchor click 
+            e.preventDefault();
+            $(".overlay").toggleClass("overlay-open");
+            $("#hamburger-icon").toggleClass("hamburger-open");
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                onInitialized: function(e) {
+                    $('.counter-out').text('1 / ' + this.items().length)
+                    console.log();
+                }
+            });
+            $(".owl-carousel").on('changed.owl.carousel', function(e) {
+                $('.counter-out').text(++e.page.index + ' / ' + e.page.count)
+            });
+        });
+    </script>
+</body></html>

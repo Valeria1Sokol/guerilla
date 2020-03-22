@@ -1,0 +1,496 @@
+.containerBox {
+    background-image: url(../img/about_bg.png);
+}
+
+.mainText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw 0 0 5.2vw;
+}
+
+.mainText .aboutText {
+    width: 19.8%;
+    position: absolute;
+    z-index: 2;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30vw;
+    height: 37.4vw;
+    padding: 4vw 3.5vw;
+    transition: all 1s;
+}
+
+.slide1 {
+    width: 87%;
+    height: 92%;
+    position: absolute;
+}
+
+.slide1:first-of-type {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.center .slide1:first-of-type {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.slide1:last-of-type {
+    opacity: 0;
+}
+
+.center .slide1:last-of-type {
+    height: 114%;
+    animation: fadeState 5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.center .slide1 {
+    height: 114%;
+}
+
+.slide2 {
+    width: 80%;
+    position: absolute;
+}
+.slide2:first-of-type {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.center .slide2:first-of-type {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.slide2:last-of-type {
+    opacity: 0;
+}
+
+.center .slide2:last-of-type {
+    animation: fadeState 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.slide2T .sliderInfo {
+    padding-left: 1vw;
+    width: 85%;
+}
+
+.slide3,
+.slideImgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.glitch-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/weDoSlide3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+
+}
+
+.slideImg {
+    position: absolute;
+    opacity: 1;
+}
+
+.center .glitch-img {
+    opacity: 1;
+}
+
+.center .slideImg {
+    opacity: 0;
+}
+
+.slide4 {
+    width: 64%;
+    position: absolute;
+}
+
+.slide4:first-of-type {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.center .slide4:first-of-type {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.slide4:last-of-type {
+    opacity: 0;
+}
+
+.center .slide4:last-of-type {
+    animation: fadeState 3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.slide5 {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 1s;
+    width: 76%;
+    height: 89%;
+
+}
+
+.slideImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide5:last-of-type {
+    opacity: 0;
+}
+
+.center .slide5:last-of-type {
+    animation: fadeState 5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.slide6 {
+    width: 61%;
+    position: absolute;
+    z-index: 1;
+}
+
+.slide61 {
+    height: 50%;
+    width: 45%;
+    top: 0;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.slide62 {
+    height: 50%;
+    width: 45%;
+    top: 0;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.slide63 {
+    height: 50%;
+    width: 45%;
+    top: 0;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.pulse {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+    transition: all 1s;
+    z-index: 0;
+    opacity: 0;
+}
+
+.pulse:last-of-type {
+    z-index: 1;
+}
+
+.center .pulse {
+    opacity: 1;
+    animation: pulse 5s ease-in-out infinite;
+}
+
+.center .slide61 {
+    opacity: 1;
+    animation: rotate 5s ease-in-out infinite;
+}
+
+.center .slide62 {
+    opacity: 1;
+    animation: rotate2 7s ease-in-out infinite;
+}
+
+.center .slide63 {
+    opacity: 1;
+    animation: rotate 6s ease-in-out infinite;
+}
+
+
+
+.sliderL .sliderInfo {
+    width: 90%;
+}
+
+
+
+.owl-carousel.owl-drag .owl-item {
+    transform: scale(0.8);
+    opacity: .3;
+    transition: all .7s;
+}
+
+.center {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+.center .sliderInfo {
+    display: block;
+}
+
+
+.slider .sliderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sliderL .sliderText {
+    align-items: center;
+}
+
+.sliderH1 {
+    width: 104%;
+    font-family: 'MuseoL', serif;
+    font-size: 1.6vw;
+    color: #fae74c;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    margin: 1vw 0 2vw;
+    position: relative;
+}
+
+
+.sliderInfo {
+    width: 82%;
+    color: #808080;
+    font-size: 0.8vw;
+    line-height: 1.6;
+    display: none;
+}
+
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    width: 6vw;
+    height: 6.4vw;
+    background-image: url(../img/arrow.png);
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: center;
+
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    width: 6vw;
+    height: 6.4vw;
+    background-image: url(../img/arrow.png);
+
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    border: none;
+    outline: none;
+}
+
+.owl-carousel .owl-nav button span {
+
+    color: transparent;
+}
+
+.counter-out {
+    width: 98%;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.casses {
+    color: white;
+    background-image: url(../img/Group.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.7%;
+    padding: 3vw 3.7vw 5.2vw 2.6vw;
+    line-height: 1.5;
+    position: absolute;
+    font-size: 0.9vw;
+    right: 3%;
+    z-index: 2;
+}
+
+.casses a {
+    color: white;
+    text-decoration: none;
+}
+
+.casses a:hover,
+.casses a:active {
+    color: white;
+}
+
+.casses p {
+    text-decoration: underline solid #FCEF4F;
+    -webkit-text-decoration: underline solid #FCEF4F;
+    text-underline-position: under;
+}
+
+.casses p span {
+    font-weight: bold;
+}
+
+@media all and (max-width:768px) {
+    .overlay {
+        z-index: 3;
+    }
+
+    .mainText {
+        padding: 10vw;
+        align-items: center;
+    }
+
+    .mainText .aboutText {
+        width: 35%;
+        position: relative;
+    }
+
+    .slider {
+
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .sliderImg {
+        width: 70%;
+    }
+
+    .slide1 {
+        width: 60%;
+    }
+
+    .slide2 {
+        width: 51%;
+    }
+
+    .slide3,
+    .slideImgBox {
+        height: 40vw;
+    }
+
+    .slide4 {
+        width: 42%;
+    }
+
+    .slide5 {
+        width: 55%;
+    }
+
+    .slide6 {
+        width: 40%;
+    }
+
+    .pulse .slide6 {
+        width: 27.1%;
+    }
+
+    .slider .sliderText {
+        width: 56%;
+        margin: 8vw 0;
+    }
+
+    .sliderH1 {
+        font-size: 3.5vw;
+        margin: 0vw 0 4vw;
+    }
+
+    .sliderInfo {
+        font-size: 1.4vw;
+    }
+
+    .owl-carousel {
+        margin: 10vw 0 0;
+        background-color: transparent;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        width: 12vw;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+        transform: scale(1);
+        opacity: 1;
+        transition: all .7s;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        height: 80vw;
+    }
+
+    .casses {
+        width: 21.7%;
+        padding: 4vw 5.7vw 9.5vw 4.6vw;
+        font-size: 2vw;
+        right: 7%;
+    }
+
+}

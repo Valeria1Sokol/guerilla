@@ -1,0 +1,181 @@
+header {
+    display: flex !important;
+}
+body
+{
+    overflow-x: hidden!important;
+    overflow-y: auto!important;
+}
+.containerBox {
+    background-image: url(../img/work_bg.png);
+}
+
+.mainText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.6vw 7.4vw;
+}
+
+.mainText .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainText .text .imgText {
+    width: 11.5%;
+}
+
+.mainText .text p {
+    width: 79%;
+    text-align: center;
+    font-size: 0.65vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.work {
+    width: 79%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work .workBox {
+    width: 28.4%;
+    height: 13.5vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1.3vw 0 0;
+}
+
+.work .workBox:hover {
+    cursor: pointer;
+}
+
+.work .textBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5vw 0vw 0 1vw;
+}
+
+.work .workBox .workText {
+    color: #FCEE21;
+    font-family: 'MuseoL', serif;
+    font-size: 0.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+}
+
+.work .workBox span {
+    color: white;
+    font-size: 0.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 0.2vw 0 0;
+    text-transform: uppercase;
+        letter-spacing: 0.2vw;
+}
+
+.work .workBox .workImg {
+    max-width: 100%;
+    height: 91%;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    transition: all .5s;
+
+}
+
+.work .workBox:hover .workImg {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    cursor: pointer;
+}
+
+.work .workBox .text {
+    color: #808080;
+    font-size: 15px;
+    display: none;
+}
+
+@media all and (max-width:768px) {
+    .mainText .text .imgText {
+        width: 16.5%;
+    }
+
+    .mainText .text p {
+        font-size: 1.2vw;
+    }
+
+    .work .workBox {
+        width: 42%;
+        height: 19.2vw;
+        margin: 3.3vw 0 0;
+    }
+
+    .work .workBox .workText {
+        font-size: .7vw;
+        letter-spacing: 1px;
+    }
+
+    #Box {
+        width: 67%;
+        margin: 10% auto;
+    }
+
+    #Box span,
+    #Box .workText {
+        font-size: 1vw;
+        letter-spacing: 1px;
+    }
+
+    #Box .workText {
+        padding: 2px 0 0;
+    }
+
+    .flavor-lightbox__caption {
+        font-size: 2.5vw;
+        margin: 0 0 1.5vw;
+    }
+
+    .text {
+        color: #808080;
+        font-size: 1.5vw;
+        width: 50%;
+    }
+
+    .flavor-lightbox__close {
+        top: 5%;
+        right: 19%;
+        font-size: 25px;
+    }
+
+    .work .workBox span {
+        font-size: .7vw;
+        letter-spacing: 1px;
+    }
+}
+
+@media all and (max-width:320px) {
+
+    .work .workBox .workText,
+    .work span {
+        letter-spacing: 0.2px;
+    }
+
+    .work .textBox {
+        padding: 0.7vw 1vw 0;
+    }
+}

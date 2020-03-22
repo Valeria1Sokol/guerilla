@@ -1,0 +1,99 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fadeState {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+    98%
+    {
+        top: 0;
+    }
+    100% {
+        opacity: 0;
+        top: -100px;
+    }
+}
+
+@keyframes stateAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes david {
+    from {
+        background-image: url(../img/David.png);
+    }
+
+    to {
+        background-image: url(../img/08.gif);
+    }
+}
+
+@keyframes cleo {
+    from {
+        background-image: url(../img/Cleopatra.png);
+    }
+
+    to {
+        background-image: url(../img/06.gif);
+    }
+}
