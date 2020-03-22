@@ -49,8 +49,14 @@
 }
 
 @media all and (max-width:768px) {
-
-
+    body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+.container
+    {
+        height: fit-content!important;
+    }
     .caseBox {
         width: 90%;
         height: 30vw;
@@ -58,21 +64,27 @@
         padding: 3vw 2.7vw;
     }
 
+    .clm3Box {
+        justify-content: center;
+        margin: 0 0 7vw;
+    }
+
     .clm3Box .caseBox {
-        width: 41.4%;
+        width: 56%;
         margin: 0 0 7vw;
 
     }
+
     .clm3Box .caseBox:last-of-type {
         margin: 0;
 
     }
 
     .caseBox .caseP {
-        font-size: 1.4vw;
+        font-size: 2vw;
     }
 
     .mainText {
-        padding: 10% 14% 0;
+        padding: 10% 14%;
     }
 }

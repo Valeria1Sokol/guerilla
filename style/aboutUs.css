@@ -113,22 +113,23 @@
     }
 
     .sliderImg {
-        width: 41%;
+        width: 50%;
+        margin-top: 3vw;
     }
 
     .slider .sliderText {
         align-items: center;
-        width: 75%;
-        margin: 8vw 0;
+        width: 100%;
+        margin: 0vw 0 8vw;
     }
 
     .sliderH1 {
-        font-size: 3.5vw;
+        font-size: 3.7vw;
         margin: 0vw 0 4vw;
     }
 
     .sliderInfo {
-        font-size: 1.4vw;
+        font-size: 2.6vw;
     }
 
     .owl-carousel {
@@ -153,10 +154,10 @@
     }
 
     .owl-nav {
-        margin: 3vw -12vw 0 0;
+        margin: 3vw -11vw 0 0;
     }
-    .overlay
-    {
+
+    .overlay {
         z-index: 2;
     }
 }
