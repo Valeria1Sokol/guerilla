@@ -11,9 +11,15 @@
 .destop {
     display: block;
 }
+body {
+    overflow: hidden;
+}
 
 ul li {
     list-style: none;
+}
+.container {
+    height: 100vh;
 }
 
 header {
@@ -35,7 +41,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7vw;
     letter-spacing: 0.2vw;
-    animation: fade ease-in-out 8s;
+    animation: fade ease-in-out 6s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     transition: all 1s;

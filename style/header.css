@@ -12,7 +12,7 @@ body {
     color: white;
     font-family: 'Helvetica';
     font-weight: 300;
-    overflow: hidden;
+    /*    overflow: hidden;*/
     background-color: black;
 }
 
@@ -41,12 +41,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 27% 0;
 }
 
 .navSpan {
     display: inline-block;
-    width: 26px;
-    height: 29px;
+    width: 1.4vw;
+    height: 1.5vw;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -93,6 +94,7 @@ body {
 .navSpan span:nth-child(4) {
     left: 1vw;
 }
+
 .containerBox {
     width: 93%;
     height: 100%;
