@@ -199,7 +199,7 @@ header {
     .david {
         width: 57%;
         height: 74vw;
-        animation: david ease-in-out 2.2s;
+        animation: david ease-in-out 1.4s;
         animation-fill-mode: forwards;
         background-position: 72%;
         background-size: 156%;
@@ -209,7 +209,7 @@ header {
         width: 100%;
         position: relative;
         left: 5vw;
-        animation: cleo ease-in-out 2.2s;
+        animation: cleo ease-in-out 1.4s;
         animation-fill-mode: forwards;
     }
 

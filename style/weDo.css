@@ -499,6 +499,19 @@
         right: 7%;
     }
 
+    .center .slide1:last-of-type,
+    .center .slide2:last-of-type,
+    .center .slide4:last-of-type,
+    .center .slide5:last-of-type {
+        animation: fadeState 1.3s;
+        animation-delay: 0.2s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
+
+    .center .pulse {
+        animation: pulse 3s ease-in-out infinite;
+    }
 }
 
 @media all and (max-width:425px) {
