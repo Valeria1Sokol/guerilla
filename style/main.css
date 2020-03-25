@@ -26,6 +26,9 @@ header {
     position: relative;
     z-index: 2;
 }
+.containerBox {
+    background-image: url(../img/main_bg-%D0%BA%D0%BE%D0%BF%D1%96%D1%8E%D0%B2%D0%B0%D1%82%D0%B8.png);
+}
 
 .moveinfo {
     background-color: rgba(0, 0, 0, 0.9);
@@ -42,10 +45,11 @@ header {
     font-size: 0.7vw;
     letter-spacing: 0.2vw;
     animation: fade ease-in-out 6s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     transition: all 1s;
     top: -100%;
+    padding: 18% 0% 0 11%;
 
 }
 
@@ -158,7 +162,7 @@ header {
 .state:hover {
     transition: all 1s;
     cursor: pointer;
-    background-image: url(../img/state_hover.png);
+    background-image: url(../img/main_bg_yel1.png);
 }
 
 @media all and (max-width:768px) {
