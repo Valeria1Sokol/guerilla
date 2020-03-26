@@ -17,7 +17,7 @@
 
 .owl-carousel {
     margin: 3.1vw 0 0;
-    background-image: linear-gradient( 90deg, transparent 20%, black 60%);
+    background-image: linear-gradient(90deg, transparent 20%, black 60%);
 }
 
 .slider {
@@ -124,7 +124,7 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-        /*        height: 370px;*/
+        height: fit-content;
         padding: 0;
         transform: rotate(-90deg);
     }
