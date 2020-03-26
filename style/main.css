@@ -27,7 +27,7 @@ header {
     z-index: 2;
 }
 .containerBox {
-    background-image: url(../img/main_bg-%D0%BA%D0%BE%D0%BF%D1%96%D1%8E%D0%B2%D0%B0%D1%82%D0%B8.png);
+    background-image: url(../img/main_bg.png);
 }
 
 .moveinfo {
@@ -108,7 +108,7 @@ header {
 .davidAnim {
     width: 100%;
     height: 100%;
-    background-image: url(../img/08.gif);
+    background-image: url(../img/081.gif);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -124,7 +124,7 @@ header {
 }
 
 .cleo {
-    background-image: url(../img/Cleopatra.png);
+    background-image: url(../img/Cleopatra1.png);
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 41% 45%;
@@ -137,7 +137,7 @@ header {
 .cleoAnim {
     width: 100%;
     height: 100%;
-    background-image: url(../img/06.gif);
+    background-image: url(../img/063.gif);
     background-size: 110%;
     background-position: 41% 45%;
     background-repeat: no-repeat;

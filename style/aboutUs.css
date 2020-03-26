@@ -17,7 +17,7 @@
 
 .owl-carousel {
     margin: 3.1vw 0 0;
-    background-color: black;
+    background-image: linear-gradient( 90deg, transparent 20%, black 60%);
 }
 
 .slider {
@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 42.4%;
+    height: 100%;
 }
 
 .sliderImg {
@@ -93,6 +94,20 @@
     font-family: 'MuseoL', serif;
 }
 
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vw;
+    padding: 0 18% 0 10%;
+}
+
+.bomb {
+    width: 28%;
+}
+
 @media all and (max-width:768px) {
     .mainText {
         padding: 10vw;
@@ -109,9 +124,9 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-/*        height: 370px;*/
+        /*        height: 370px;*/
         padding: 0;
-                transform: rotate(-90deg);
+        transform: rotate(-90deg);
     }
 
     .sliderImg {
@@ -129,15 +144,15 @@
         font-size: 3.7vw;
         margin: 0vw 0 4vw;
     }
-    .sliderH11
-    {
+
+    .sliderH11 {
         margin: 4vw 0 4vw;
     }
 
     .sliderInfo {
         font-size: 2.6vw;
         width: 83%;
-margin: 0 auto;
+        margin: 0 auto;
     }
 
     .owl-carousel {
@@ -154,7 +169,7 @@ margin: 0 auto;
     }
 
     .owl-carousel.owl-loaded {
-                transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 
     .owl-carousel .owl-nav button.owl-prev {
@@ -173,6 +188,6 @@ margin: 0 auto;
     .no-js .owl-carousel,
     .owl-carousel.owl-loaded {
 
-/*        flex-direction: column;*/
+        /*        flex-direction: column;*/
     }
 }
