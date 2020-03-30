@@ -11,6 +11,7 @@
 .destop {
     display: block;
 }
+
 body {
     overflow: hidden;
 }
@@ -18,6 +19,7 @@ body {
 ul li {
     list-style: none;
 }
+
 .container {
     height: 100vh;
 }
@@ -26,8 +28,10 @@ header {
     position: relative;
     z-index: 2;
 }
+
 .containerBox {
     background-image: url(../img/main_bg.png);
+    transition: all 1s;
 }
 
 .moveinfo {
@@ -159,18 +163,41 @@ header {
     background-position: bottom;
 }
 
-.state:hover {
-    transition: all 1s;
-    cursor: pointer;
-    background-image: url(../img/main_bg_yel1.png);
+@media all and (max-width:1024px) {
+
+    .stateMobile {
+        width: 60%;
+    }
+
+    .david {
+        width: 40%;
+        background-size: 121%;
+        display: flex;
+        align-items: center;
+    }
+
+    .davidAnim {
+        width: 100%;
+        height: 76%;
+    }
+
+    .cleo {
+        background-position: 66% 57%;
+        width: 39%;
+    }
+
+    .cleoAnim {
+        background-position: 66% 57%;
+    }
 }
 
 @media all and (max-width:768px) {
     .moveinfo {
         display: none;
-    animation: none;
+        animation: none;
 
-}
+    }
+
     .mobile {
         display: block;
     }

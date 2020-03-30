@@ -23,10 +23,10 @@
     </div>
     <div class="container">
         <div class="nav">
-         <a href="" class="navSpan"><span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span></a>
+            <a href="" class="navSpan"><span></span>
+                <span></span>
+                <span></span>
+                <span></span></a>
         </div>
         <div class="containerBox">
             <header>
@@ -102,6 +102,20 @@
             $(".overlay").toggleClass("overlay-open");
             $("#hamburger-icon").toggleClass("hamburger-open");
         });
+
+    </script>
+    <script>
+        $('.state').hover(function() {
+                $('.containerBox').css({
+                    backgroundImage: 'url(../img/main-bg-y.png)'
+                })
+            },
+            function() {
+                $('.containerBox').css({
+                    backgroundImage: 'url(../img/main_bg.png)'
+                })
+            }
+        )
 
     </script>
 </body>
