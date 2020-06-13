@@ -606,7 +606,7 @@ footer .copy {
     }
 
     footer .footerRight .menu li a {
-        font-size: 1.7vw;
+        font-size: 2vw;
         padding: 1.9vw 0 2vw;
     }
 
@@ -616,7 +616,7 @@ footer .copy {
     }
 
     footer .footerRight .menu li:nth-of-type(2) {
-        width: 31vw;
+        width: 35vw;
     }
 
     footer {
@@ -625,18 +625,18 @@ footer .copy {
     }
 
     footer .social .follow {
-        font-size: 1.3vw;
+        font-size: 2.3vw;
         margin-top: 2vw;
     }
 
     footer .social .logoBox .logoImg {
-        width: 4.34vw;
-        height: 4.34vw;
+        width: 6.34vw;
+        height: 6.34vw;
         background-position: 49% 50%;
     }
 
     footer .copy {
-        font-size: 1.3vw;
+        font-size: 2.3vw;
         letter-spacing: 0.2vw;
     }
 

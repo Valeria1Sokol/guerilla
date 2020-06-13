@@ -238,11 +238,12 @@ am-animating {
     }
 
     .mainText .text .workTittle {
-        font-size: 5.86vw;
+        font-size: 7.86vw;
+        margin: 0 3.4vw 0 5vw;
     }
 
     .mainText .text .tittle {
-        font-size: 1.65vw;
+        font-size: 2vw;
     }
 
     .mainText .text .imgText {
@@ -251,6 +252,10 @@ am-animating {
 
     .mainText .text p {
         font-size: 2vw;
+    }
+
+    .mainText {
+        padding: 6.36vw 2.1vw 7.35vw 1.82vw;
     }
 
     .work {

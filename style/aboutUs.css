@@ -628,6 +628,7 @@ header .menu li:nth-of-type(2) .menuNum {
         font-size: 2.6vw;
         width: 100%;
         margin: 0 auto;
+        font-weight: 400;
     }
 
     .owl-carousel {
