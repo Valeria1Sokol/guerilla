@@ -24,16 +24,16 @@
     beforeAnimate: function(el, status) {},
     afterAnimate: function(el, status) {},
     /* Deafult Ajax Parameters  */
-    type: "GET",
-    async: true,
-    complete: function(xhr, text) {},
-    cache: true,
-    error: function(xhr, text, e) {},
-    global: true,
-    headers: {},
-    statusCode: {},
-    success: function(data, text, xhr) {},
-    dataType: "html"
+//    type: "GET",
+//    async: true,
+//    complete: function(xhr, text) {},
+//    cache: true,
+//    error: function(xhr, text, e) {},
+//    global: true,
+//    headers: {},
+//    statusCode: {},
+//    success: function(data, text, xhr) {},
+//    dataType: "html"
   };  
   
   // a function to replicate all styles from the original button
