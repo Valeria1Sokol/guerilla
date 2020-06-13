@@ -1,5 +1,18 @@
 .containerBox {
     background-image: url(../img/about_bg.png);
+    /*    width: 93.4%;*/
+}
+
+header .menu li:nth-of-type(2) a {
+    color: #FAE74C;
+}
+
+header .menu li:nth-of-type(2) {
+    border-top: 1px solid white;
+}
+
+header .menu li:nth-of-type(2) .menuNum {
+    font-size: 1.25vw;
 }
 
 .mainText {
@@ -8,15 +21,410 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 4.4vw 0 4.4vw 12.6vw;
+    padding: 6vw 0 4vw 14.3vw;
+    position: relative;
 }
 
 .mainText .aboutText {
-    width: 31%;
+    width: 23%;
+    margin-left: 0.1vw;
 }
 
+.mainText .tittle {
+    font-family: Silkscreen;
+    font-size: 2.76vw;
+    color: #FAE74C;
+    margin: 1.67vw 0 0;
+}
+
+.bird {
+    width: 100%;
+}
+
+
+.bird2 {
+    transform: rotate(-49deg);
+
+}
+
+.hoverme {
+    position: absolute;
+    width: 3.8vw;
+    left: 61%;
+    top: 22%;
+}
+
+.hoverme:first-of-type {
+    left: 55%;
+    top: 21%;
+}
+
+.hoverme i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 0.13vw;
+    height: 0.3vw;
+    background: red;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(1) {
+    transform: translate3d(-1vw, -2vw, 0) rotate(113deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(2) {
+    transform: translate3d(2vw, -3vw, 0) rotate(232deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(3) {
+    transform: translate3d(4vw, -3vw, 0) rotate(16deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(4) {
+    transform: translate3d(-4vw, 1vw, 0) rotate(188deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(5) {
+    transform: translate3d(-0.5vw, -1vw, 0) rotate(14deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(6) {
+    transform: translate3d(-2vw, 5vw, 0) rotate(121deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(7) {
+    transform: translate3d(1vw, 4vw, 0) rotate(45deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(8) {
+    transform: translate3d(4vw, -2vw, 0) rotate(19deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(9) {
+    transform: translate3d(3vw, 2vw, 0) rotate(355deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(10) {
+    transform: translate3d(1.5vw, -1vw, 0) rotate(91deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(11) {
+    transform: translate3d(-0.1vw, 5vw, 0) rotate(180deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(12) {
+    transform: translate3d(-4vw, -1vw, 0) rotate(319deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(13) {
+    transform: translate3d(3vw, -1vw, 0) rotate(266deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(14) {
+    transform: translate3d(-3.5vw, 4vw, 0) rotate(75deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(15) {
+    transform: translate3d(-2vw, -2vw, 0) rotate(322deg);
+    background: #fbff00;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(16) {
+    transform: translate3d(-2vw, -1vw, 0) rotate(80deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(17) {
+    transform: translate3d(-1vw, -1vw, 0) rotate(194deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(18) {
+    transform: translate3d(3vw, 4vw, 0) rotate(131deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(19) {
+    transform: translate3d(2.5vw, 4.5vw, 0) rotate(10deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(20) {
+    transform: translate3d(3vw, -1vw, 0) rotate(330deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(21) {
+    transform: translate3d(0, 3.7vw, 0) rotate(66deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(22) {
+    transform: translate3d(1.4vw, -1.8vw, 0) rotate(15deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(23) {
+    transform: translate3d(-2vw, -2.9vw, 0) rotate(255deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(24) {
+    transform: translate3d(-3vw, 0, 0) rotate(199deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(25) {
+    transform: translate3d(-1.6vw, 1.6vw, 0) rotate(232deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(26) {
+    transform: translate3d(3vw, 0vw, 0) rotate(157deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(27) {
+    transform: translate3d(-0.6vw, -0.5vw, 0) rotate(97deg);
+    background: #FAE74C;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(28) {
+    transform: translate3d(0.8vw, 6vw, 0) rotate(345deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(29) {
+    transform: translate3d(1.7vw, 5.3vw, 0) rotate(162deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(30) {
+    transform: translate3d(2vw, 6vw, 0) rotate(307deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(31) {
+    transform: translate3d(-3vw, 2vw, 0) rotate(51deg);
+    background: #fff700;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(32) {
+    transform: translate3d(-5vw, 1.8vw, 0) rotate(186deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(33) {
+    transform: translate3d(2.6vw, -2.4vw, 0) rotate(209deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(34) {
+    transform: translate3d(-3vw, 6vw, 0) rotate(357deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(35) {
+    transform: translate3d(-3.2vw, 5vw, 0) rotate(320deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(36) {
+    transform: translate3d(-4.6vw, 6vw, 0) rotate(309deg);
+    background: white;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(37) {
+    transform: translate3d(-6vw, 0vw, 0) rotate(125deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(38) {
+    transform: translate3d(2vw, 1vw, 0) rotate(230deg);
+    background: #eeff00;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(39) {
+    transform: translate3d(0.6vw, 0, 0) rotate(267deg);
+    background: #808080;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+.hoverme:hover i:nth-of-type(40) {
+    transform: translate3d(-1vw, 6vw, 0) rotate(50deg);
+    background: #f7ff00;
+    animation: bang 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+/*
+
+.hoverme:hover i:nth-of-type(41) {
+    transform: translate3d(-44px, -61px, 0) rotate(292deg);
+    background: white;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(42) {
+    transform: translate3d(21px, -53px, 0) rotate(355deg);
+    background: white;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(43) {
+    transform: translate3d(2px, -94px, 0) rotate(188deg);
+    background: #808080;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(44) {
+    transform: translate3d(77px, -70px, 0) rotate(345deg);
+    background: #FAE74C;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(45) {
+    transform: translate3d(-8px, -50px, 0) rotate(89deg);
+    background: #808080;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(46) {
+    transform: translate3d(57px, -90px, 0) rotate(295deg);
+    background: white;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(47) {
+    transform: translate3d(-43px, -52px, 0) rotate(290deg);
+    background: #FAE74C;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(48) {
+    transform: translate3d(-34px, -71px, 0) rotate(60deg);
+    background: #808080;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(49) {
+    transform: translate3d(-17px, -71px, 0) rotate(113deg);
+    background: #FAE74C;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+
+.hoverme:hover i:nth-of-type(50) {
+    transform: translate3d(39px, -74px, 0) rotate(281deg);
+    background: white;
+    animation: bang 700ms ease-out forwards;
+    opacity: 1;
+}
+*/
+
 .owl-carousel {
-    margin: 3.1vw 0 0;
+    margin: 2.5vw 0 0;
     background-image: linear-gradient(90deg, transparent 20%, black 60%);
 }
 
@@ -26,7 +434,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 18% 0 10%;
+    height: 23.5vw;
+    padding: 0 0 0 10%;
+    border: 1px solid #FAE74C;
 }
 
 .slider .sliderText {
@@ -34,8 +444,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 42.4%;
+    width: 65%;
     height: 100%;
+    background-color: #FAE74C;
+    padding: 0 0 0 5.2vw;
 }
 
 .sliderImg {
@@ -43,19 +455,22 @@
 }
 
 .sliderH1 {
-    font-family: 'MuseoL', serif;
-    font-size: 2vw;
-    color: #fae74c;
+    font-family: Silkscreen;
+    font-size: 2.45vw;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 0.3vw;
-    margin: 0 0 2.9vw;
+    margin: 0 0 2.6vw;
 }
 
 .sliderInfo {
-
-    color: #808080;
+    letter-spacing: 1px;
+    color: black;
     font-size: 0.8vw;
     line-height: 1.6;
+    font-family: Helvetica;
+    font-weight: 100;
+    width: 58%;
 }
 
 .no-js .owl-carousel,
@@ -73,7 +488,13 @@
     background-repeat: no-repeat;
     background-size: 12%;
     background-position: center;
+    background-color: black;
+    transition: all .3s;
+}
 
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: white;
+    background-image: url(../img/arrowHover.png);
 }
 
 .owl-carousel .owl-nav button.owl-prev:focus {
@@ -87,76 +508,130 @@
 }
 
 .counter-out {
-    width: 98%;
+    width: 84%;
     text-align: center;
     color: white;
-    font-size: 1em;
-    font-family: 'MuseoL', serif;
-}
-
-.slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 20vw;
-    padding: 0 18% 0 10%;
+    font-size: 0.84vw;
+    font-family: Futura_Medium;
+    margin-top: 2.05vw;
 }
 
 .bomb {
-    width: 28%;
+    width: 26%;
 }
 
-@media all and (max-width:768px) {
+.owl-nav {
+    height: 100%;
+    height: 23.5vw;
+    position: relative;
+    z-index: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAE74C;
+}
+
+.yellowArr {
+    position: absolute;
+    left: 6%;
+    top: 80%;
+    width: 2.85vw;
+    opacity: 0;
+    animation: fadeArr ease-in-out 3s infinite;
+}
+
+.yellowArr1 {
+    left: 2%;
+
+    animation-delay: .7s;
+}
+
+.yellowArr2 {
+    animation-delay: 1.7s;
+}
+
+.yellowArr3 {
+    left: 10%;
+    animation-delay: 2.5s;
+}
+
+@media all and (max-width:1024px) {
     .mainText {
         padding: 10vw;
         align-items: center;
     }
 
     .mainText .aboutText {
-        width: 70%;
+        width: 53%;
+    }
+
+    .mainText .tittle {
+        font-size: 5.76vw;
+        margin: 2.67vw 0 0;
+    }
+
+    .hoverme {
+        width: 8.8vw;
+        left: 61%;
+        top: 23%;
+        margin: 0 0 5vw;
+    }
+
+    .hoverme:first-of-type {
+        left: 42%;
+        top: 23%;
     }
 
     .slider {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        height: fit-content;
+        justify-content: flex-end;
+        align-items: center;
+        width: 83%;
+        height: 90vw;
         padding: 0;
         transform: rotate(-90deg);
+        position: relative;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+        /*        height: 383px !important;*/
+        padding: 0vw 0vw 0 3.4vw;
     }
 
     .sliderImg {
-        width: 46%;
-        margin: 3vw auto 1vw;
+        width: 43%;
+        margin: 0vw auto 0vw;
+        top: 11%;
     }
 
     .slider .sliderText {
         align-items: center;
-        width: 94%;
-        margin: 0vw auto 8vw;
+        width: 100%;
+        height: 50%;
+        margin: 0vw auto;
+        padding: 3vw 2.4vw 5vw;
+
     }
 
     .sliderH1 {
-        font-size: 3.7vw;
+        font-size: 4.7vw;
         margin: 0vw 0 4vw;
     }
 
     .sliderH11 {
-        margin: 4vw 0 4vw;
+        margin: 0vw 0 4vw;
     }
 
     .sliderInfo {
         font-size: 2.6vw;
-        width: 83%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .owl-carousel {
-        margin: 10vw 0 0;
+        margin: 21vw 0 0;
         background-color: transparent;
     }
 
@@ -178,16 +653,36 @@
 
     .owl-nav {
         margin: 3vw -11vw 0 0;
+        background-color: transparent;
     }
 
     .overlay {
         z-index: 2;
     }
 
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background-color: transparent;
+        background-image: url(../img/arrow.png);
+    }
 
-    .no-js .owl-carousel,
-    .owl-carousel.owl-loaded {
+    .yellowArr {
+        left: 6%;
+        top: 52%;
+        transform: rotate(90deg);
+        width: 5.85vw;
+        z-index: 5;
+    }
 
-        /*        flex-direction: column;*/
+    .yellowArr1 {
+        left: 6%;
+    }
+
+    .yellowArr2 {
+        top: 60%;
+    }
+
+    .yellowArr3 {
+        top: 68%;
+        left: 6%;
     }
 }

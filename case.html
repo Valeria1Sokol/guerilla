@@ -5,25 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>GuerillaBeta</title>
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/case_style.css">
+
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/styleNavBar.css">
+    <link rel="stylesheet" href="style/case_style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/snap.svg-min.js"></script>
+    <script src="script/modernizr.custom.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="nav">
         <div class="nav">
-         <a href="" class="navSpan"><span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span></a>
+            <div class="menu-collapsed" id="trigger-overlay">
+                <div class="navSpan" id="navSpan"></div>
+            </div>
+        </div>
+        <!-- open/close -->
+        <div id="all">
+            <div class="overlay overlay-genie" data-steps="m 701.56545,809.01175 35.16718,0 0,19.68384 -35.16718,0 z;m 698.9986,728.03569 41.23353,0 -3.41953,77.8735 -34.98557,0 z;m 687.08153,513.78234 53.1506,0 C 738.0505,683.9161 737.86917,503.34193 737.27015,806 l -35.90067,0 c -7.82727,-276.34892 -2.06916,-72.79261 -14.28795,-292.21766 z;m 403.87105,257.94772 566.31246,2.93091 C 923.38284,513.78233 738.73561,372.23931 737.27015,806 l -35.90067,0 C 701.32034,404.49318 455.17312,480.07689 403.87105,257.94772 z;M 51.871052,165.94772 1362.1835,168.87863 C 1171.3828,653.78233 738.73561,372.23931 737.27015,806 l -35.90067,0 C 701.32034,404.49318 31.173122,513.78234 51.871052,165.94772 z;m 52,26 1364,4 c -12.8007,666.9037 -273.2644,483.78234 -322.7299,776 l -633.90062,0 C 359.32034,432.49318 -6.6979288,733.83462 52,26 z;m 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+                    <path class="overlay-path" d="m 701.56545,809.01175 35.16718,0 0,19.68384 -35.16718,0 z" />
+                </svg>
+                <div class="navBarMenu">
+                    <button type="button" class="overlay-close">Close</button>
+                    <nav>
+                        <ul>
+                            <li><a href="case.html">
+                                    <h1 class="num">01</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg01" alt="" src="img/01.png"></div>
+                                    <p class="name">WEB EXPERIENCES, BABY!</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">02</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg02" alt="" src="img/02.png"></div>
+                                    <p class="name">THE NEW REALITY - AR</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">03</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg03" alt="" src="img/03.png"></div>
+                                    <p class="name">GAME DEVELOPMENT</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">04</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg04" alt="" src="img/04.png"></div>
+                                    <p class="name">APP DEVELOPMENT</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="containerBox">
             <header>
-                <a href=""><img class='logo' src='img/logo.png'></a>
+                <a href="index.html">
+                    <div class="logo">
+                        <img class='guer' src='img/guerLogoHeader.png'>
+                        <img class='beta' src='img/beta.png'>
+                    </div>
+                </a>
                 <ul class="menu">
                     <li> <a href="index.html">
                             <p class="menuText">Home</p>
@@ -31,7 +80,7 @@
                         </a>
                     </li>
                     <li> <a href="aboutUs.html">
-                            <p class="menuText">Telling stories that are remembered</p>
+                            <p class="menuText">Telling stories that are</p>
                             <p class="menuNum">02.</p>
                         </a>
                     </li>
@@ -45,15 +94,21 @@
                             <p class="menuNum">04.</p>
                         </a>
                     </li>
-
+                    <li> <a href="offices.html">
+                            <p class="menuText">Offices</p>
+                            <p class="menuNum">05.</p>
+                        </a>
+                    </li>
                 </ul>
+
+
                 <div class="burgerMenu">
                     <a id="hamburger-icon" href="#" class="open-close-btn"><span></span>
                         <span></span>
                         <span></span>
                         <span></span></a>
                 </div>
-                <div id="myNav" class="overlay">
+                <div id="myNav" class="overlay1">
                     <div class="overlay-content">
                         <a href="index.html">
                             <p class="menuText"><span class="menuNum">01. </span>Home</p>
@@ -67,34 +122,75 @@
                         <a href="work.html">
                             <p class="menuText"><span class="menuNum">04. </span>Work</p>
                         </a>
+                        <a href="offices.html">
+                            <p class="menuText"><span class="menuNum">05. </span>Offices</p>
+                        </a>
                     </div>
                 </div>
             </header>
             <div class="mainText">
-                <div class="clm3Box">
-                    <div class="caseBox">
-                        <p class="caseP">Suppose you’re a <span>5-star restaurant</span></p>
-                    </div>
-                    <div class="caseBox">
-                        <p class="caseP">Needing to <span>shake things up</span> for your customers</p>
-                    </div>
-                    <div class="caseBox">
-                        <p class="caseP">Who should <span>you call?</span></p>
-                    </div>
+                <div class="leftBox">
+                    <a class="use">USE CASES | WEB EXPERIENCES </a>
+                    <img src="img/x.png" class="xAnimate" alt="">
+                    <img class="imgText" alt="" src="img/caseText.png">
+                    <p class="tittle">scenarios</p>
+                    <a class="btn">WEB EXPERIENCE</a>
+                    <img class="num" alt="" src="img/num.png">
                 </div>
-                <div class="caseBox">
-                    <p class="caseP">Use AI/AR/API development/App development/social experiences/web experiences with <br><span>Guerilla Beta to evolve your business</span></p>
+                <div class="rightBox">
+                    <div class="imgBox"><img class="caseImg" alt="" src="img/img.png"></div>
+                    <div class="imgBox"><img class="caseImg" alt="" src="img/img.png"></div>
+                    <div class="imgBox"><img class="caseImg" alt="" src="img/img.png"></div>
+                    <div class="imgBox"><img class="caseImg" alt="" src="img/img.png"></div>
                 </div>
             </div>
+            <footer>
+                <div class="btnContainer">
+                    <img class="leftHand" alt="" src="img/leftHand.png">
+                    <div class="btnBox">
+                        <p class="p">WHAT DOES THIS BUTTON DO...</p>
+                        <a href="" class="btnGuer"></a>
+                    </div>
+                    <img class="rightHand" alt="" src="img/rightHand.png">
+                </div>
+                <div class="footerRight">
+                    <a href=""><img class='logo' src='img/logo.png'></a>
+                    <ul class="menu">
+                        <li> <a href="index.html">Home</a>
+                        </li>
+                        <li> <a href="aboutUs.html">Telling stories that are remembered</a>
+                        </li>
+                        <li> <a href="weDo.html">What we do</a>
+                        </li>
+                        <li> <a href="work.html">Work</a>
+                        </li>
+                        <li> <a href="offices.html">Offices</a>
+                        </li>
+                    </ul>
+                    <div class="infoBox">
+                        <div class="social">
+                            <p class="follow">FOLLOW US:</p>
+                            <div class="logoBox">
+                                <div class="logoImg" style="background-image: url(img/face.png);     background-size: 32%;"></div>
+                                <div class="logoImg" style="background-image: url(img/insta.png);    background-size: 50%;"></div>
+                            </div>
+                        </div>
+                        <p class="copy">Copyright 2020 GuerillaBeta Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
 
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
         $(".open-close-btn").on('click touchstart', function(e) {
             // prevent default anchor click 
             e.preventDefault();
-            $(".overlay").toggleClass("overlay-open");
+            $(".overlay1").toggleClass("overlay-open");
             $("#hamburger-icon").toggleClass("hamburger-open");
         });
     </script>
+    <script src="script/classie.js"></script>
+    <script src="script/demo12.js"></script>
 </body></html>

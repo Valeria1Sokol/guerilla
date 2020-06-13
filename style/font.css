@@ -11,3 +11,31 @@
     font-family: 'MuseoL';
     src: url("../font/MuseoSansCyrl-300.ttf");
 }
+@font-face {
+    font-family: Futura_Medium;
+    src: url("../font/Futura Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: Silkscreen;
+    src: url("../font/Silkscreen_V2_V2.otf") format("opentype");
+}
+@font-face {
+    font-family: FuturaLT-CondensedBoldOblique;
+    src: url("../font/FuturaLT-CondensedBoldOblique.woff") format('woff');
+}
+@font-face {
+    font-family: FuturaLTBold;
+    src: url("../font/FuturaLTBold.otf") format("opentype");
+}
+@font-face {
+    font-family: AvenirLTStd-Black;
+    src: url("../font/AvenirLTStd-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: avenirltstd-light;
+    src: url("../font/avenirltstd-light.otf") format("opentype");
+}
+@font-face {
+    font-family: Futura_Maxi_CG_Bold_Regular;
+    src: url("../font/Futura_Maxi_CG_Bold_Regular.otf") format("opentype");
+}

@@ -2,18 +2,36 @@
     background-image: url(../img/about_bg.png);
 }
 
+header .menu li:nth-of-type(3) a {
+    color: #FAE74C;
+}
+
+header .menu li:nth-of-type(3) {
+    border-top: 1px solid white;
+}
+
+header .menu li:nth-of-type(3) .menuNum {
+    font-size: 1.25vw;
+}
+
 .mainText {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 2vw 0 0 5.2vw;
+    position: relative;
 }
 
 .mainText .aboutText {
-    width: 19.8%;
+    width: 15.4%;
     position: absolute;
     z-index: 2;
+    top: 8vw;
+}
+
+.xAnimate {
+    top: 6vw;
 }
 
 .slider {
@@ -21,14 +39,46 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 30vw;
+    /*    width: 27.3vw;*/
     height: 37.4vw;
-    padding: 4vw 3.5vw;
+    padding: 4vw 0;
     transition: all 1s;
 }
 
+.center .slider:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #FCEF4F;
+    border-right: 1px solid #FCEF4F;
+    visibility: hidden;
+}
+
+.center .slider:before {
+    animation: topleft 1.3s ease-in-out forwards;
+}
+
+.center .slider:after {
+    animation: bottomright 1.3s ease-in-out forwards;
+}
+
+.center .slider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #FCEF4F;
+    border-left: 1px solid #FCEF4F;
+    visibility: hidden;
+}
+
 .slide1 {
-    width: 87%;
+    width: 69%;
     height: 92%;
     position: absolute;
 }
@@ -85,10 +135,13 @@
     animation-iteration-count: 1;
 }
 
+/*
+
 .slide2T .sliderInfo {
     padding-left: 1vw;
     width: 85%;
 }
+*/
 
 .slide3,
 .slideImgBox {
@@ -153,9 +206,8 @@
     max-width: 100%;
     max-height: 100%;
     transition: all 1s;
-    width: 76%;
-    height: 89%;
-
+    width: 73%;
+    height: 99%;
 }
 
 .slideImgBox {
@@ -183,7 +235,7 @@
 
 .slide61 {
     height: 50%;
-    width: 45%;
+    width: 36%;
     top: 0;
     animation-delay: 0.3s;
     animation-fill-mode: both;
@@ -193,7 +245,7 @@
 
 .slide62 {
     height: 50%;
-    width: 45%;
+    width: 36%;
     top: 0;
     animation-delay: 0.7s;
     animation-fill-mode: both;
@@ -203,7 +255,7 @@
 
 .slide63 {
     height: 50%;
-    width: 45%;
+    width: 36%;
     top: 0;
     animation-delay: 0.4s;
     animation-fill-mode: both;
@@ -249,10 +301,12 @@
 }
 
 
+/*
 
 .sliderL .sliderInfo {
     width: 90%;
 }
+*/
 
 
 
@@ -276,7 +330,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 
@@ -285,19 +339,20 @@
 }
 
 .sliderH1 {
-    width: 104%;
-    font-family: 'MuseoL', serif;
-    font-size: 1.6vw;
+    width: 100%;
+    font-family: Silkscreen;
+    font-size: 1.8vw;
     color: #fae74c;
     text-transform: uppercase;
     letter-spacing: 0.3vw;
     margin: 1vw 0 2vw;
     position: relative;
+    text-align: center;
 }
 
 
 .sliderInfo {
-    width: 82%;
+    width: 68%;
     color: #808080;
     font-size: 0.8vw;
     line-height: 1.6;
@@ -350,8 +405,9 @@
     width: 98%;
     text-align: center;
     color: white;
-    font-size: 1em;
-    font-family: 'MuseoL', serif;
+    font-size: 0.84vw;
+    margin: 1.8vw 0 3.1vw;
+    font-family: Futura_Medium;
 }
 
 .owl-nav {
@@ -362,6 +418,7 @@
     justify-content: space-between;
 }
 
+/*
 .casses {
     color: white;
     background-image: url(../img/Group.png);
@@ -398,27 +455,38 @@
 .casses p span {
     font-weight: bold;
 }
+*/
 
-@media all and (max-width:768px) {
+@media all and (max-width:1024px) {
+    .xAnimate {
+        top: 11vw;
+        left: 10%;
+    }
+
     .overlay {
         z-index: 3;
     }
 
     .mainText {
-        padding: 10vw;
+        padding: 10vw 5vw;
         align-items: center;
     }
 
     .mainText .aboutText {
-        width: 35%;
+        width: 37%;
         position: relative;
+        margin: 0 0 6vw;
     }
 
     .slider {
-
         justify-content: space-between;
         width: 100%;
         height: fit-content;
+        margin: 0 auto;
+        transform: scale(0.8);
+        padding: 4vw 0 0;
+        position: relative;
+        left: -1.5vw;
     }
 
     .sliderImg {
@@ -433,9 +501,16 @@
         width: 51%;
     }
 
-    .slide3,
+    .slide3 {
+        height: 47vw;
+        width: 64%;
+        margin: 0 0 5vw;
+    }
+
     .slideImgBox {
-        height: 40vw;
+        width: 81%;
+        height: 46vw;
+        margin: 0 0 5vw;
     }
 
     .slide3 .slideImg {
@@ -443,11 +518,13 @@
     }
 
     .slide4 {
-        width: 42%;
+        width: 52%;
+        margin: 2vw 0 6vw;
     }
 
     .slide5 {
-        width: 50%;
+        width: 47%;
+        height: 87%;
     }
 
     .slide6 {
@@ -455,11 +532,11 @@
     }
 
     .pulse .slide6 {
-        width: 27.1%;
+        width: 32.1%;
     }
 
     .slider .sliderText {
-        width: 70%;
+        width: 80%;
         margin: 0vw 0 8vw;
     }
 
@@ -490,15 +567,17 @@
     }
 
     .owl-carousel .owl-stage-outer {
-        height: 80vw;
+        /*        height: 80vw;*/
     }
 
+    /*
     .casses {
         width: 21.7%;
         padding: 4vw 5.7vw 9.5vw 4.6vw;
         font-size: 2vw;
         right: 7%;
     }
+*/
 
     .center .slide1:last-of-type,
     .center .slide2:last-of-type,
@@ -513,47 +592,13 @@
     .center .pulse {
         animation: pulse 1.5s ease-in-out infinite;
     }
-}
 
-@media all and (max-width:425px) {
-    .slide3 {
-        width: 137%;
+    .owl-nav {
+        width: 106%;
     }
 
-    .casses {
-        padding: 4.1vw 5.7vw 10vw 4.6vw;
-    }
-
-    .pulse .slide6 {
-        width: 27.1%;
-        height: 50%;
+    .counter-out {
+        font-size: 1.84vw;
     }
 }
 
-@media all and (max-width:375px) {
-    .pulse .slide6 {
-        height: 49%;
-    }
-}
-
-@media all and (max-width:360px) {
-
-    .casses {
-        padding: 4.2vw 5.7vw 10vw 4.6vw;
-    }
-
-    .pulse .slide6 {
-        height: 49%;
-    }
-}
-
-@media all and (max-width:320px) {
-    .slide3 {
-        width: 144%;
-    }
-
-    .casses {
-        width: 22.2%;
-        padding: 4.5vw 6vw 10.2vw 4.6vw;
-    }
-}

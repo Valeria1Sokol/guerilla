@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>GuerillaBeta</title>
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl.theme.default.css">
+    <!--    <link rel="stylesheet" href="style/owl.theme.default.css">-->
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/aboutUs.css">
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/styleNavBar.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/snap.svg-min.js"></script>
+    <script src="script/modernizr.custom.js"></script>
 
 
     <!-- javascript -->
@@ -23,16 +26,59 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="nav">
         <div class="nav">
-         <a href="" class="navSpan"><span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span></a>
+            <div class="menu-collapsed" id="trigger-overlay">
+                <div class="navSpan" id="navSpan"></div>
+            </div>
+        </div>
+        <!-- open/close -->
+        <div id="all">
+            <div class="overlay overlay-genie" data-steps="m 701.56545,809.01175 35.16718,0 0,19.68384 -35.16718,0 z;m 698.9986,728.03569 41.23353,0 -3.41953,77.8735 -34.98557,0 z;m 687.08153,513.78234 53.1506,0 C 738.0505,683.9161 737.86917,503.34193 737.27015,806 l -35.90067,0 c -7.82727,-276.34892 -2.06916,-72.79261 -14.28795,-292.21766 z;m 403.87105,257.94772 566.31246,2.93091 C 923.38284,513.78233 738.73561,372.23931 737.27015,806 l -35.90067,0 C 701.32034,404.49318 455.17312,480.07689 403.87105,257.94772 z;M 51.871052,165.94772 1362.1835,168.87863 C 1171.3828,653.78233 738.73561,372.23931 737.27015,806 l -35.90067,0 C 701.32034,404.49318 31.173122,513.78234 51.871052,165.94772 z;m 52,26 1364,4 c -12.8007,666.9037 -273.2644,483.78234 -322.7299,776 l -633.90062,0 C 359.32034,432.49318 -6.6979288,733.83462 52,26 z;m 0,0 1439.999975,0 0,805.99999 -1439.999975,0 z">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+                    <path class="overlay-path" d="m 701.56545,809.01175 35.16718,0 0,19.68384 -35.16718,0 z" />
+                </svg>
+                <div class="navBarMenu">
+                    <button type="button" class="overlay-close">Close</button>
+                    <nav>
+                        <ul>
+                            <li><a href="case.html">
+                                    <h1 class="num">01</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg01" alt="" src="img/01.png"></div>
+                                    <p class="name">WEB EXPERIENCES, BABY!</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">02</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg02" alt="" src="img/02.png"></div>
+                                    <p class="name">THE NEW REALITY - AR</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">03</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg03" alt="" src="img/03.png"></div>
+                                    <p class="name">GAME DEVELOPMENT</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <h1 class="num">04</h1>
+                                    <div class="navBarImg">
+                                        <img class="navBarImg04" alt="" src="img/04.png"></div>
+                                    <p class="name">APP DEVELOPMENT</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="containerBox">
             <header>
-                <a href=""><img class='logo' src='img/logo.png'></a>
+                <a href="index.html">
+                    <div class="logo">
+                        <img class='guer' src='img/guerLogoHeader.png'>
+                        <img class='beta' src='img/beta.png'>
+                    </div>
+                </a>
                 <ul class="menu">
                     <li> <a href="index.html">
                             <p class="menuText">Home</p>
@@ -40,7 +86,7 @@
                         </a>
                     </li>
                     <li> <a href="aboutUs.html">
-                            <p class="menuText">Telling stories that are remembered</p>
+                            <p class="menuText">Telling stories that are</p>
                             <p class="menuNum">02.</p>
                         </a>
                     </li>
@@ -54,15 +100,21 @@
                             <p class="menuNum">04.</p>
                         </a>
                     </li>
-
+                    <li> <a href="offices.html">
+                            <p class="menuText">Offices</p>
+                            <p class="menuNum">05.</p>
+                        </a>
+                    </li>
                 </ul>
+
+
                 <div class="burgerMenu">
                     <a id="hamburger-icon" href="#" class="open-close-btn"><span></span>
                         <span></span>
                         <span></span>
                         <span></span></a>
                 </div>
-                <div id="myNav" class="overlay">
+                <div id="myNav" class="overlay1">
                     <div class="overlay-content">
                         <a href="index.html">
                             <p class="menuText"><span class="menuNum">01. </span>Home</p>
@@ -76,11 +128,28 @@
                         <a href="work.html">
                             <p class="menuText"><span class="menuNum">04. </span>Work</p>
                         </a>
+                        <a href="offices.html">
+                            <p class="menuText"><span class="menuNum">05. </span>Offices</p>
+                        </a>
                     </div>
                 </div>
             </header>
             <div class="mainText">
                 <img src="./img/about_text.png" alt="" class="aboutText">
+                <p class="tittle">THAT ARE REMEMBERED</p>
+                <div class='hoverme'>
+                    <img class="bird bird1" alt="" src="img/bird.png">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <div class='hoverme'>
+                    <img class="bird bird2" alt="" src="img/bird.png">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+
+                </div>
+                <img class="yellowArr yellowArr1" alt="" src="img/yellowArr.png">
+                <img class="yellowArr yellowArr2" alt="" src="img/yellowArr.png">
+                <img class="yellowArr yellowArr3" alt="" src="img/yellowArr.png">
+
 
                 <!-- body -->
                 <div class="owl-carousel">
@@ -94,24 +163,61 @@
                     <div class="slider">
                         <img src="./img/kitty-paw2.gif" class="sliderImg" alt="">
                         <div class="sliderText">
-                            <h1 class="sliderH1 sliderH11">LOREM IPSUM</h1>
-                            <p class="sliderInfo">Our creativity coupled with problem solving skills and using technology has put us as the lead agency for many brands. We leave innovation first for their customers whilst still paying homage to traditional brand communication.</p>
+                            <h1 class="sliderH1 sliderH11">About us</h1>
+                            <p class="sliderInfo">We are a creative tech lead agency that specialises in organically created CX focused appeal for clients that breaks down barriers in challenging traditional creative experiences that you can cultivate with tech today.</p>
                         </div>
                     </div>
 
                 </div>
                 <p class="counter-out"></p>
             </div>
+            <footer>
+                <div class="btnContainer">
+                    <img class="leftHand" alt="" src="img/leftHand.png">
+                    <div class="btnBox">
+                        <p class="p">WHAT DOES THIS BUTTON DO...</p>
+                        <a href="" class="btnGuer"></a>
+                    </div>
+                    <img class="rightHand" alt="" src="img/rightHand.png">
+                </div>
+                <div class="footerRight">
+                    <a href=""><img class='logo' src='img/logo.png'></a>
+                    <ul class="menu">
+                        <li> <a href="index.html">Home</a>
+                        </li>
+                        <li> <a href="aboutUs.html">Telling stories that are remembered</a>
+                        </li>
+                        <li> <a href="weDo.html">What we do</a>
+                        </li>
+                        <li> <a href="work.html">Work</a>
+                        </li>
+                        <li> <a href="offices.html">Offices</a>
+                        </li>
+                    </ul>
+                    <div class="infoBox">
+                        <div class="social">
+                            <p class="follow">FOLLOW US:</p>
+                            <div class="logoBox">
+                                <div class="logoImg" style="background-image: url(img/face.png);     background-size: 32%;"></div>
+                                <div class="logoImg" style="background-image: url(img/insta.png);    background-size: 50%;"></div>
+                            </div>
+                        </div>
+                        <p class="copy">Copyright 2020 GuerillaBeta Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script>
         $(".open-close-btn").on('click touchstart', function(e) {
             // prevent default anchor click 
             e.preventDefault();
-            $(".overlay").toggleClass("overlay-open");
+            $(".overlay1").toggleClass("overlay-open");
             $("#hamburger-icon").toggleClass("hamburger-open");
         });
     </script>
+    <script src="script/classie.js"></script>
+    <script src="script/demo12.js"></script>
     <script>
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({

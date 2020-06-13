@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .menu li:nth-of-type(5) a {
+    color: #FAE74C;
+}
+
+header .menu li:nth-of-type(5) {
+    border-top: 1px solid white;
+}
+
+header .menu li:nth-of-type(5) .menuNum {
+    font-size: 1.25vw;
+}
+
+.containerBox {
+    background-image: url(../img/officesBG.png);
+}
+
+.mainText {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 7.1vw 19.7vw 5.7vw 10.6vw;
+}
+
+.mainText .imgBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 29.6%;
+    position: relative;
+    padding: 6vw 0 0;
+}
+
+.mainText .imgBlock .openImg {
+    width: 15.6vw;
+}
+
+.signboard {
+    width: 15.5vw;
+    height: 12.1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sign {
+    width: 100%;
+    height: 7vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign p {
+
+    font-size: 4.54vw;
+    color: #FAE74C;
+    font-family: Silkscreen;
+    -webkit-text-fill-color: black;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FAE74C;
+    text-align: center;
+
+    animation: lower 10s linear infinite;
+}
+
+.strings {
+    width: 6vw;
+    height: 6vw;
+    border: 1px solid white;
+    position: absolute;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    top: 2.1vw;
+}
+
+.pin {
+    width: 1.4vw;
+    height: 1.4vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pin.top {
+    background: black;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.mainText .imgBlock .xAnimate {
+    left: 98%;
+    top: 113%;
+}
+
+.mainText .textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 62.2%;
+    position: relative;
+}
+
+
+.mainText .textBlock .textImg {
+    width: 16.2vw;
+    margin: 0 0 2.1vw;
+}
+
+.mainText .textBlock .text {
+    font-family: Silkscreen;
+    font-size: 3.86vw;
+    color: #FAE74C;
+    margin: 0 0 3.15vw;
+}
+
+.mainText .textBlock .tittle {
+    font-size: 1.25vw;
+    font-family: avenirltstd-light;
+    color: white;
+    width: 87%;
+    font-weight: 100;
+}
+
+.mainText .textBlock span {
+    font-size: 1.25vw;
+    font-family: AvenirLTStd-Black;
+    color: white;
+    margin-top: 2.3vw;
+}
+
+.mainText .textBlock .address {
+    font-size: 1.25vw;
+    font-family: Futura_Maxi_CG_Bold_Regular;
+    color: #FCEF4F;
+    margin: 2.3vw 0 0;
+    line-height: 1.8vw;
+}
+
+@media all and (max-width:1024px) {
+    .mainText .textBlock .textImg {
+        width: 18.2vw;
+    }
+
+    .mainText .textBlock .text {
+        font-size: 5.86vw;
+    }
+
+    .mainText .textBlock .tittle {
+        font-size: 2.25vw;
+        width: 97%;
+    }
+
+    .mainText .textBlock span {
+        font-size: 2.25vw;
+    }
+
+    .mainText .textBlock .address {
+        font-size: 2.25vw;
+        line-height: 5.8vw;
+    }
+
+    .mainText {
+        padding: 7.1vw 10.7vw 5.7vw 6.6vw;
+    }
+
+    .signboard {
+        width: 22.5vw;
+        height: 19.1vw;
+    }
+
+    .strings {
+        width: 12vw;
+        height: 12vw;
+        top: 3.1vw;
+    }
+
+    .sign {
+        height: 10vw;
+    }
+
+    .sign p {
+        font-size: 5.54vw;
+    }
+}

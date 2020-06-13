@@ -6,40 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GuerillaBeta</title>
-    <link rel="stylesheet" href="style/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/offices.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/weDo.css">
     <link rel="stylesheet" href="style/font.css">
-    <link rel="stylesheet" href="style/demo1.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/animation.css">
     <link rel="stylesheet" href="style/styleNavBar.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="script/is.min.js"></script>
-    <script>
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        if (is.safari()) {
-            link.href = "style/safari.css";
-        }
-        document.head.appendChild(link);
-
-    </script>
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="script/snap.svg-min.js"></script>
     <script src="script/modernizr.custom.js"></script>
-    <!-- javascript -->
-    <script src="script/jquery.min.js"></script>
-    <script src="script/owl.carousel.min.js"></script>
 </head>
 
 <body>
     <div class="container" id="nav">
         <div class="nav">
-            <div class="menu-collapsed" id="trigger-overlay">
-                <div class="navSpan" id="navSpan"></div>
-            </div>
+           <div class="menu-collapsed" id="trigger-overlay">
+            <div class="navSpan" id="navSpan"></div></div>
         </div>
         <!-- open/close -->
         <div id="all">
@@ -144,88 +127,29 @@
                 </div>
             </header>
             <div class="mainText">
-                <img src="img/x.png" class="xAnimate" alt="">
-                <img src="img/weDoText.png" alt="" class="aboutText">
-                <!--
-                <div class="casses">
-                    <a href='case.html'>
-                        <p>Find out
-                            more of our
-                            <span>use cases</span></p>
-                    </a>
+                <div class="imgBlock">
+                    <div class="signboard">
+                        <div class="sign">
+                            <p>open</p>
+                        </div>
+                        <div class="strings"></div>
+                        <div class="pin top"></div>
+                    </div>
+                    <img src="img/x.png" class="xAnimate" alt="">
                 </div>
--->
-
-                <!-- body -->
-                <div class="owl-carousel">
-                    <div class="slider">
-                        <div class="slideImgBox">
-                            <img src="img/weDoSlide1.png" class="sliderImg slide1" alt="">
-                            <img src="img/05.gif" class="sliderImg slide1" alt=""></div>
-                        <div class="sliderText">
-                            <h1 class="sliderH1">CX AND UX DESIGN</h1>
-                            <p class="sliderInfo">Ensure your brand experience stands out amongst the crowd with engaging web experiences that incorporate interactive 2D and 3D graphics on a sophisticated interface.</p>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="slideImgBox">
-                            <img src="img/weDoSlide2.png" class="sliderImg slide2" alt="">
-                            <img src="img/man1_3.gif" class="sliderImg slide2" alt="">
-                        </div>
-                        <div class="sliderText slide2T">
-                            <h1 class="sliderH1">SOCIAL EXPERIENCES</h1>
-                            <p class="sliderInfo">Launch your new product or service with intriguing instant social experiences with stunning creative effects or creative gamification to emerge from the online clutter.</p>
-                        </div>
-                    </div>
-
-                    <div class="slider">
-                        <div class="sliderImg slide3">
-                            <img src="img/weDoSlide3.png" class="slideImg" alt="">
-                            <div class="glitch-img"></div>
-
-                        </div>
-
-                        <div class="sliderText">
-                            <h1 class="sliderH1">APP DEVELOPMENT</h1>
-                            <p class="sliderInfo">Update your communication lines with a progressive web app that creates a hybrid with the platform already used by your business.</p>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="slideImgBox">
-                            <img src="img/weDoSlide4.png" class="sliderImg slide4" alt="">
-                            <img src="img/04.gif" class="sliderImg slide4" alt=""></div>
-                        <div class="sliderText">
-                            <h1 class="sliderH1">API DEVELOPMENT</h1>
-                            <p class="sliderInfo">Unify your platforms for a consistent brand tone with API design and prototyping to build apps that effectively communicate with each other.</p>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="slideImgBox">
-                            <img src="img/weDoSlide5.png" class="sliderImg slide5" alt="">
-                            <img src="img/weDoSlide52.png" class="sliderImg slide5" alt="">
-                        </div>
-                        <div class="sliderText">
-                            <h1 class="sliderH1">AUGMENTED REALITY</h1>
-                            <p class="sliderInfo">Bring your brand to life with the power of AR. Use 3D mapping and AR apps that we creatively design and deploy in no time to give your brand new life.</p>
-                        </div>
-                    </div>
-                    <div class="slider sliderL">
-                        <div class="slideImgBox">
-                            <div class='pulse'>
-                                <img src="img/circle3.png" class="sliderImg slide63 slide6" alt=""></div>
-                            <img src="img/weDoSlide6.png" class="sliderImg slide6" alt="">
-                            <div class='pulse'>
-                                <img src="img/circle1.png" class="sliderImg slide61 slide6" alt="">
-                                <img src="img/circle2.png" class="sliderImg slide62 slide6" alt=""></div>
-                        </div>
-                        <div class="sliderText">
-                            <h1 class="sliderH1" style="text-align: center; ">AI</h1>
-                            <p class="sliderInfo">From increasing efficiency to creating a coherent work environment, use AI computer vision, machine learning and neutral networks to improve your business.</p>
-                        </div>
-                    </div>
+                <div class="textBlock">
+                    <img src="img/x.png" class="xAnimate" alt="">
+                    <img src="img/officesText.png" alt="" class="textImg">
+                    <p class="text">create</p>
+                    <p class="tittle">If you want to create you need the space to create. Our offices should be your home away from home, without the drama or annoying spouse.</p>
+                    <span>Today, you can find us in:</span>
+                    <h1 class="address"> CAPE TOWN</h1>
+                    <p class="tittle">40 Dorp Street, Bo Kaap, Cape Town.</p>
+                    <h1 class="address">JOHANNESBURG</h1>
+                    <p class="tittle">Shop 223, Design Quarter, Fourways.</p>
 
                 </div>
-                <p class="counter-out"></p>
+
             </div>
             <footer>
                 <div class="btnContainer">
@@ -262,8 +186,10 @@
                     </div>
                 </div>
             </footer>
+
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
         $(".open-close-btn").on('click touchstart', function(e) {
             // prevent default anchor click 
@@ -271,12 +197,7 @@
             $(".overlay1").toggleClass("overlay-open");
             $("#hamburger-icon").toggleClass("hamburger-open");
         });
-
     </script>
-    <script src="script/mgGlitch.min.js"></script>
-    <script src="script/classie.js"></script>
+     <script src="script/classie.js"></script>
     <script src="script/demo12.js"></script>
-    <script src="script/slider.js"></script>
-</body>
-
-</html>
+</body></html>

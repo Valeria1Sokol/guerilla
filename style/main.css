@@ -12,16 +12,8 @@
     display: block;
 }
 
-body {
-    overflow: hidden;
-}
-
 ul li {
     list-style: none;
-}
-
-.container {
-    height: 100vh;
 }
 
 header {
@@ -48,7 +40,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 0.7vw;
     letter-spacing: 0.2vw;
-    animation: fade ease-in-out 6s;
+    /*    animation: fade ease-in-out 6s;*/
     animation-delay: 2s;
     animation-iteration-count: 1;
     transition: all 1s;
@@ -71,18 +63,11 @@ header {
 
 .mainText {
     width: 100%;
-    height: 100%;
+    padding: 10vw 0 5.3vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-}
-
-.imgText {
-    position: absolute;
-    z-index: 2;
-    width: 45%;
-    margin-top: 9vw;
 }
 
 .hoverBox {
@@ -91,14 +76,18 @@ header {
 
 .stateBox {
     width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .stateMobile {
     width: 70%;
+    margin: 0px 3vw 0 -5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .david {
@@ -107,6 +96,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 30%;
+    height: 33.7vw;
 }
 
 .davidAnim {
@@ -124,8 +114,8 @@ header {
 .david:hover .davidAnim {
     display: block;
     animation: stateAnim ease-in-out 2s;
-
 }
+
 
 .cleo {
     background-image: url(../img/Cleopatra1.png);
@@ -133,9 +123,13 @@ header {
     background-size: 110%;
     background-position: 41% 45%;
     width: 33%;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    transition: all 1.2s;
 }
 
 .cleoAnim {
@@ -155,16 +149,54 @@ header {
     animation: stateAnim ease-in-out 2s;
 }
 
-.state {
-    width: 66%;
-    background-image: url(../img/state.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+.cleo:hover {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
 }
+
+.state {
+    width: 76%;
+    background-image: url(../img/maintext.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 60% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 0 0;
+    padding: 0 0 1.7vw;
+    position: relative;
+}
+
+.state .t {
+    font-size: 2.9vw;
+    font-family: FuturaLT-CondensedBoldOblique;
+    color: white;
+    text-transform: uppercase;
+}
+
+.state .we {
+    font-size: 3.13vw;
+    line-height: 1.8vw;
+    font-family: Silkscreen;
+    color: #FAE74C;
+}
+
+.state .creative {
+    font-size: 4.17vw;
+    font-family: FuturaLT-CondensedBoldOblique;
+    color: white;
+}
+
+.state .creative span {
+    padding: 0 3.4vw;
+}
+
 
 @media all and (max-width:1024px) {
 
+    /*
     .stateMobile {
         width: 60%;
     }
@@ -189,9 +221,8 @@ header {
     .cleoAnim {
         background-position: 66% 57%;
     }
-}
+*/
 
-@media all and (max-width:768px) {
     .moveinfo {
         display: none;
         animation: none;
@@ -213,7 +244,8 @@ header {
     .mainText {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 18vw 11vw 0 9vw;
+        padding: 8vw 2vw;
+        position: relative;
     }
 
     .imgText {
@@ -224,44 +256,73 @@ header {
     }
 
     .stateBox {
-        height: fit-content;
+        justify-content: flex-end;
     }
 
     .david {
-        width: 57%;
-        height: 74vw;
+        width: 36%;
+        height: 60vw;
         animation: david ease-in-out 1.4s;
         animation-fill-mode: forwards;
         background-position: 72%;
         background-size: 156%;
+        position: absolute;
+        top: 11vw;
+        left: 6vw;
     }
 
     .cleo {
-        width: 100%;
+        width: 46%;
+        height: 35vw;
         position: relative;
-        left: 5vw;
+        left: -6vw;
         animation: cleo ease-in-out 1.4s;
         animation-fill-mode: forwards;
+        margin-top: 5vw;
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
     }
 
     .state {
         width: 100%;
+        margin: 0vw 0 0;
+    }
+
+    /*
+    .state {
+        width: 100%;
         background-image: url(../img/state_mobile.png);
     }
-
-    .state:hover {
-        background-image: none;
-    }
+*/
 
     .stateMobile {
-        width: 48%;
+        margin: 0;
+        width: 75%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .davidAnim,
     .cleoAnim {
         display: none;
+    }
+
+    .state .t {
+        font-size: 3.9vw;
+    }
+
+    .state .we {
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+
+    .state .creative {
+        font-size: 6vw;
+    }
+
+    .state .creative span {
+        padding: 0 5.4vw;
     }
 
 

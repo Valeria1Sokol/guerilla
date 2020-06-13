@@ -7,8 +7,25 @@ body {
     overflow-y: auto !important;
 }
 
+header .menu li:nth-of-type(4) a {
+    color: #FAE74C;
+}
+
+header .menu li:nth-of-type(4) {
+    border-top: 1px solid white;
+}
+
+header .menu li:nth-of-type(4) .menuNum {
+    font-size: 1.25vw;
+}
+
 .containerBox {
     background-image: url(../img/work_bg.png);
+}
+
+.xAnimate {
+    left: 17%;
+    top: 11%;
 }
 
 .mainText {
@@ -17,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3.6vw 7.4vw;
+    padding: 6.36vw 6.1vw 7.35vw 6.82vw;
 }
 
 .mainText .text {
@@ -28,12 +45,14 @@ body {
     align-items: center;
 }
 
-.mainText .text .imgText {
-    width: 11.5%;
+.mainText .text .workTittle {
+    font-family: Silkscreen;
+    font-size: 3.86vw;
+    color: #FAE74C;
+    margin: 0 8.4vw 0 11vw;
 }
 
-.mainText .text p {
-    width: 79%;
+.mainText .text .tittle {
     text-align: center;
     font-size: 0.65vw;
     font-family: 'Roboto', sans-serif;
@@ -43,7 +62,42 @@ body {
 }
 
 .work {
-    width: 79%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 0 0;
+}
+
+.mainText .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.workBox {
+    width: 28.4%;
+    height: 12.5vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.3vw;
+    background-color: white;
+    border: 0.5vw solid #FEF000;
+}
+
+.workBox:hover {
+    cursor: pointer;
+}
+
+.mainText .arrBlock {
+    position: relative;
+    width: 8.8%;
+    height: 26.5vw;
+    margin: 0 6.15vw 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -51,55 +105,78 @@ body {
     align-items: center;
 }
 
-.work .workBox {
+.mainText .arrBlock:last-of-type {
+    margin: 0 0 0 4.8vw;
+}
+
+.mainText .arrFlow {
+    width: 44%;
+    opacity: 0;
+    animation: fadeArr ease-in-out 1.4s infinite;
+}
+
+.arrBlock:nth-of-type(1) .arr2,
+.arrBlock:nth-of-type(1) .arr3,
+.arrBlock:last-of-type .arr1,
+.arrBlock:last-of-type .arr4 {
+    animation-delay: .3s;
+}
+
+.arrBlock:nth-of-type(1) .arr1,
+.arrBlock:nth-of-type(1) .arr4,
+.arrBlock:last-of-type .arr2,
+.arrBlock:last-of-type .arr3 {
+    animation-delay: .7s;
+}
+
+.arrBlock:nth-of-type(1) .arr3,
+.arrBlock:nth-of-type(1) .arr4,
+.arrBlock:last-of-type .arr1,
+.arrBlock:last-of-type .arr2 {
+    transform: rotate(180deg);
+}
+
+.workBox {
+    outline: none;
+}
+
+.btn,
+am-animating {
     width: 28.4%;
-    height: 13.5vw;
-    display: flex;
-    flex-direction: column;
-    margin: 1.3vw 0 0;
+    height: 12.5vw;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    color: black;
+
 }
 
-.work .workBox:hover {
-    cursor: pointer;
+.btn,
+.am-btn,
+.am-animating,
+.am-front {
+    outline: none !important;
 }
 
-.work .textBox {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0.5vw 0vw 0 1vw;
-}
-
-.work .workBox .workText {
-    color: #FCEE21;
-    font-family: 'MuseoL', serif;
-    font-size: 0.5vw;
+.workBox .workText {
+    color: black;
+    font-family: FuturaLTBold;
+    font-size: 0.4vw;
     text-transform: uppercase;
     letter-spacing: 0.1vw;
+    text-decoration: none;
+    padding: 0.5vw 0vw 0.5vw 0.8vw;
 }
 
-.work .workBox span {
-    color: white;
-    font-size: 0.5vw;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin: 0 0.2vw 0 0;
-    text-transform: uppercase;
-    letter-spacing: 0.2vw;
-}
-
-.work .workBox .workImg {
+.workBox .workImg {
     max-width: 100%;
-    height: 91%;
+    height: 86%;
     filter: brightness(60%);
     -webkit-filter: brightness(60%);
     transition: all .5s;
-
 }
 
-.work .workBox:hover .workImg {
+.workBox:hover .workImg {
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     cursor: pointer;
@@ -111,7 +188,63 @@ body {
     display: none;
 }
 
-@media all and (max-width:768px) {
+.textBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 2.1vw;
+}
+
+.textBox .tittle {
+    font-size: 0.42vw;
+    color: white;
+    font-family: 'MuseoL';
+    letter-spacing: 0.1vw;
+    margin: 0 0.2vw 0 0;
+}
+
+.textBox .workText {
+    font-size: 0.42vw;
+    color: #FCEE21;
+    font-family: 'MuseoL';
+    letter-spacing: 0.1vw;
+}
+
+.flavor-lightbox__image {
+    width: 100%;
+}
+
+.flavor-lightbox__caption {
+    font-size: 1.5vw;
+    color: #FCEE21;
+    font-family: Silkscreen;
+    margin: 0 0 1.4vw;
+    letter-spacing: 0.1vw;
+}
+
+.textMain {
+    color: #808080;
+    font-size: 0.8vw;
+    font-weight: 100;
+    letter-spacing: 0.1vw;
+}
+
+@media all and (max-width:1024px) {
+    .xAnimate {
+        top: 14%;
+        left: 7%;
+    }
+
+    .mainText .text .workTittle {
+        font-size: 5.86vw;
+    }
+
+    .mainText .text .tittle {
+        font-size: 1.65vw;
+    }
+
     .mainText .text .imgText {
         width: 16.5%;
     }
@@ -136,9 +269,9 @@ body {
         letter-spacing: 1px;
     }
 
-    #Box {
-        width: 67%;
-        margin: 10% auto;
+    .am-expanded.am-modal,
+    .am-expanded.am-back {
+        width: 77vw;
     }
 
     #Box span,
@@ -154,7 +287,7 @@ body {
         margin: 0 0 1.5vw;
     }
 
-    .text {
+    .textMain {
         color: #808080;
         font-size: 2.3vw;
         width: 69%;
@@ -170,9 +303,24 @@ body {
         font-size: 1.5vw;
         letter-spacing: 1px;
     }
+
+    .am-close {
+        width: 4vw;
+        height: 4vw;
+        font-size: 4vw;
+        top: -1vw;
+    }
 }
 
-@media (max-width: 425px) {
+@media all and (max-width:768px) {
+    .am-expanded.am-modal {
+        left: 11%;
+        margin-left: 0;
+    }
+
+}
+
+@media all and (max-width: 425px) {
 
 
     .flavor-lightbox__close {
@@ -181,7 +329,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media all and (max-width: 375px) {
     .work .workBox .workText {
         font-size: 1.3vw;
     }
